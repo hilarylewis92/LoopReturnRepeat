@@ -23,7 +23,7 @@ describe('ForLoops', function() {
     assert.deepEqual(forLoops.array, [1,2,3,4]);
   });
 
-  it('should determine if each number can modulo to equal zero.', function() {
+  it('shoul determine if each number can modulo to equal zero. ', function() {
     var forLoops = new ForLoops([4,8,12,64]);
     assert.equal(forLoops.modulo(4), true);
     assert.equal(forLoops.modulo(3), false);
