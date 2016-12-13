@@ -2,4 +2,4 @@
 
 Create a solution and then run:
 
-  npm test
+  `npm test`
