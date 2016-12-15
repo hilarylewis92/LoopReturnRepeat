@@ -14,9 +14,9 @@ describe('IronFE', function() {
   });
 
   it('should add new item', function() {
-    let obj = { kale: 12, apple: 5 }
+    let obj = { kale: 12, apple: 5 };
 
-    let answer = { kale: 12, apple: 5, avocado: 4  }
+    let answer = { kale: 12, apple: 5, avocado: 4 };
 
     assert.deepEqual(addNewItem(obj, {avocado: 4}), answer);
     assert.deepEqual(obj, answer);
@@ -24,20 +24,20 @@ describe('IronFE', function() {
 
   it('should add items to apple', function() {
     let obj = { kale: 12, apple: 5, orange: 8, garlic: 130,
-                  banana: 8, avocado: 44 }
+                  banana: 8, avocado: 44 };
 
     let answer = { kale: 12, apple: 9, orange: 8, garlic: 130,
-                  banana: 8, avocado: 44 }
+                  banana: 8, avocado: 44 };
     assert.deepEqual(addItems(obj, 'apple', 4), answer);
   });
 
   it('should combine both the arrays into one object using reduce', function() {
-    let amount = [12, 5, 8, 130, 8, 44]
+    let amount = [12, 5, 8, 130, 8, 44];
     let foodNames = ['kale', 'apple', 'orange', 'garlic',
-                      'banana', 'avocado' ]
+                      'banana', 'avocado' ];
 
     let answer = { kale: 12, apple: 5, orange: 8, garlic: 130,
-                  banana: 8, avocado: 44 }
+                  banana: 8, avocado: 44 };
 
     assert.deepEqual(foodCounter(foodNames, amount), answer);
   });
@@ -86,7 +86,8 @@ describe('IronFE', function() {
     let list = { kale: {dino: 1, baby: 5 }, apple: { honeycrisp: 1, fuji: 5 },
     lettuce: { romaine: 2, iceburg: 2  } };
 
-    let answer = { kale: 6, apple: 6, lettuce: 4 }
+    let answer = { kale: 6, apple: 6, lettuce: 4 };
+
     assert.deepEqual(totalBunch(list), answer);
     assert.deepEqual(list, answer);
   });
@@ -94,25 +95,11 @@ describe('IronFE', function() {
   it('should find the total of each category' , function() {
     let list = { kale: {dino: 1, baby: 5 }, apple: { honeycrisp: 1, fuji: 5 },
     lettuce: { romaine: 2, iceburg: 2  }, avocado: 3 };
-    // what happens when some data is flattened already?
-    // what does Object.keys(obj[item]) return?
-    let answer = { kale: 6, apple: 6, lettuce: 4, avocado: 3 }
+
+    let answer = { kale: 6, apple: 6, lettuce: 4, avocado: 3 };
+
     assert.deepEqual(totalBunch(list), answer);
     assert.deepEqual(list, answer);
   });
-
-
-
-  //
-  // it('should change apple amount to 20', function() {
-  //
-  //   let og = { kale: 12, apple: 5, orange: 8, garlic: 130,
-  //                 banana: 8, avocado: 44 }
-  //   let add = { kale: 2, apple: 1, orange: 3, garlic: 4,
-  //                 banana: 2, avocado: 3 }
-  //   let answer = { kale: 14, apple: 6, orange: 11, garlic: 134,
-  //                 banana: 10, avocado: 47 }
-  //   assert.deepEqual(addList(og, add), answer);
-  // });
 
 });
