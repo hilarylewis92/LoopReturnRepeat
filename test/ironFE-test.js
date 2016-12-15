@@ -25,17 +25,8 @@ describe('IronFE', function() {
     assert.equal(indexStuff(130, array), 3);
   });
 
-  it.skip('should indexOf', function() {
-    var array = [12, 5, 8, 130, 8, 44]
-    assert.equal(indexStuff(130, array), 3);
-  });
-
   it.skip('should reverse string using forEach', function() {
     assert.equal(reverseString('hello'), 'olleh');
   });
-
-
-  // forEach reverse, no lets or vars aka const
-
 
 });
