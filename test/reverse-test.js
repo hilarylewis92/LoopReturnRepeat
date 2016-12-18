@@ -4,31 +4,31 @@ var { reverse, forEachReverse, mapReverse, reduceReverse,
 
 describe('IronFE - Reverse', function() {
 
-  it('should use reverse', function() {
+  it.skip('should use reverse', function() {
     assert.equal(reverse('hello'), 'olleh');
   });
 
-  it('should use forEach', function() {
+  it.skip('should use forEach', function() {
     assert.equal(forEachReverse('hello'), 'olleh');
   });
 
-  it('should use map', function() {
+  it.skip('should use map', function() {
     assert.equal(mapReverse('hello'), 'olleh');
   });
 
-  it('should use reduce', function() {
+  it.skip('should use reduce', function() {
     assert.equal(reduceReverse('hello'), 'olleh');
   });
 
-  it('should use for loop', function() {
+  it.skip('should use for loop', function() {
     assert.equal(forReverse('hello'), 'olleh');
   });
 
-  it('should use a for loop without arrays', function() {
+  it.skip('should use a for loop without arrays', function() {
     assert.equal(forLoopReverse('hello'), 'olleh');
   });
 
-  it('should use while loop', function() {
+  it.skip('should use while loop', function() {
     assert.equal(whileReverse('hello'), 'olleh');
   });
 
